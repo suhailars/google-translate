@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Signin Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="static/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="static/css/signin.css" rel="stylesheet">
+
+   <script src="static/js/jquery-1.9.0.js"></script>
+   <!-- script src="static/js/eldarion-ajax.min.js"></script-->
+   <script src="static/js/script.js"></script>
+
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <form class="form-signin ajax" role="form">
+        <h2 class="form-signin-heading">Translator</h2>
+        <div class="form-group">
+          <input id="english" name="english" class="form-control" placeholder="Engish to Translate" required autofocus>
+        </div>
+        <div class="form-group">
+        <select class="selectpicker"  name="lang">
+          <option value='ru'>Russian</option>
+          <option value='fr'>French</option>
+          <option value='es'>spanish</option>
+        </select>
+        </div>
+        <div class="form-group">
+        <input id="other" name="other" class="form-control" placeholder="language to convert eg:ru for Russian" required>
+        </div>
+        <button id="translate" class="btn btn-lg btn-primary btn-block" type="button">Sign in</button>
+      </form>
+	<div>
+
+		<h2 ><span id="res">Heading<span></h2>
+	</div>
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  </body>
+</html>
+
