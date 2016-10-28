@@ -1,5 +1,4 @@
 import os
-import requests
 from flask import Flask, render_template, request, json, url_for, redirect
 import urllib
 from api import translate
@@ -16,10 +15,8 @@ def index():
 
 @app.route('/translate', methods=['POST'])
 def translator():
-    print request.form
     word =  str(request.form['english'])
     lang = str(request.form['lang'])
-    print word, type(str(lang))
     resp = translate('en', lang, word)
     return json.dumps({'status':'OK', 'resp':resp})
 
